@@ -1,0 +1,35 @@
+$medium: 992px;
+$small: 576px;
+
+.menuSize{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: auto;
+    margin-left: 20px;
+}
+
+.maratiBtn{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width:$medium){
+    .menuSize{
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+        padding: auto;
+        margin-left: 0px;
+    }
+
+    .maratiBtn{
+        display: flex;
+        justify-content: left;
+    }
+    
+}
+

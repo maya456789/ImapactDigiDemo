@@ -1,0 +1,119 @@
+<div class="container-fluid">
+    <div class="row " style="padding: 10px;background-color: brown;color: white;">
+       <div class="col-lg-2  col-md-4 px-lg-5"><i class="fa-xs" class="bi bi-telephone "></i> -1234567890</div>
+       <div class="col-lg-4 col-md-6" ><i class="fa-xs" class="bi bi-envelope"></i> &nbsp; mahilabatchatgat&#64;gmail.com</div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row " style="padding: 10px;background-color: white;">
+       <div class="col-md-2 px-lg-5 mt-lg-2"> <a  href="#" style="text-decoration: none;font-weight: bold;color: black;font-size: 30px;">LOGO</a></div>
+    
+      
+   
+       <div class="col-md-3">
+        <div class="input-group mt-lg-2 mt-2">
+            <div class="input-group-text">
+                <i class="bi bi-geo-alt"></i>
+            </div>
+            <input type="search" class="form-control"  placeholder="Search Delivery Location">
+          </div>
+      </div>
+      <div class="col-md-4 mt-lg-2 mt-2">
+        <div class="input-group mb-3">
+            <div class="input-group-text">
+                <i class="bi bi-search"></i>
+            </div>
+            <input type="search" class="form-control"  placeholder="Search For Product">
+          </div>
+      </div>
+      <div class="col-md-3 maratiBtn mt-lg-2 mt-2">
+       <img src="png-angle-text.png" width="50px" height="40px" style="border: 2px solid red;border-radius: 10px;padding: 4px;">
+      </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg " style="background-color: antiquewhite;">
+    <div class="container-fluid">
+       
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-lg-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+             <span class="menuSize">Food</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="menuSize">Clothes</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="menuSize">Home Decors</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="menuSize">Rentals</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex " role="search" >
+            <div class="row">
+               <div class="col text-center" style="border-right: 2px solid cadetblue;">
+                <i  class="bi bi-suit-heart h3" ></i>
+                <label>Wishlist</label>
+               </div>
+               <div routerLink="/cart" class="col text-center" style="border-right: 2px solid cadetblue;">
+                <i  class="bi bi-cart4 h3"></i><span class="badge text-bg-danger move rounded-pill ">{{cartService.totalItems()}}</span><br>
+                <label>&nbsp;&nbsp;Cart&nbsp;&nbsp;</label>
+               </div>
+               <div class="col text-center mr-lg-5" >
+                <i  class="bi bi-person h3"></i>
+                <label>&nbsp;&nbsp;Profile&nbsp;&nbsp;</label>
+               </div>
+               <div class="col mt-lg-1">
+                <button  type="button" class="btn btn-danger btn-lg">Login</button>
+               </div>
+            </div>
+           
+            
+            
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+         
+        </form>
+      </div>
+    </div>
+  </nav>
+
