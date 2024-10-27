@@ -15,6 +15,9 @@ export class CartComponent {
 
   }
 
-  
+  remove(i: number){
+    this.cartService.removeProductSignal(i);
+  }
+
 
 }

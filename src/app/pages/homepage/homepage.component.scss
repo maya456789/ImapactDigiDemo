@@ -1,3 +1,26 @@
+
+.banner-container{
+  max-width: 100%;
+  --bs-gutter-x: 0%;
+  position: relative;
+  text-align: center;
+}
+
+.bg-image{
+  width:100%;
+  padding-top:42%;
+  background: url('/images/banner.jpeg') no-repeat center;
+  background-size: cover;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+}
+
 img{
     object-fit: contain;
     padding: 10px;
@@ -109,7 +132,10 @@ $animationSpeed: 40s;
   height: 20vw;
   object-fit: cover;
 }
-
+.center-text{
+  text-align: center;
+  
+}
 .center {
   text-align: center;
   position: relative;

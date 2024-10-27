@@ -21,7 +21,8 @@
           </div> -->
           <div class="col-md-2 end">
             <div class="amount">{{row.price | currency}}</div>
-           
+            <div class="save"><u>Save for later</u></div>
+          <div (click)="remove(i)" class="remove"><u>Remove</u></div>
           </div>
         </div>
       </ng-container>

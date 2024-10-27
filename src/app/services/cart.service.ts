@@ -6,14 +6,14 @@ import { ApiService, IProduct } from './api.service';
 })
 export class CartService {
 
-  public cartItems = signal<IProduct[]>([]);
+  cartItems = signal<IProduct[]>([]);
   public subTotal=computed(() => this.cartItems().reduce((prev:any,curr:any) => {
     return prev + curr.price;
   }, 0));
   public totalItems=computed(() => this.cartItems().length);
 
   constructor(private api: ApiService) {
-
+    
   }
 
   addProductSignal(product: IProduct) {
@@ -28,6 +28,7 @@ export class CartService {
   }
 
   removeProductSignal(id: number) {
+    console.log("Removed id is",id,this.cartItems());
     this.cartItems.update(val => {
       const product = val.splice(id, 1);
       this.api.products()?.forEach(a => {
@@ -37,6 +38,10 @@ export class CartService {
       });
       return val;
     });
-
+    console.log("Cart length is:",this.cartItems().length);
+    this. totalItems=computed(() => this.cartItems().length);
+    this.subTotal=computed(() => this.cartItems().reduce((prev:any,curr:any) => {
+      return prev + curr.price;
+    }, 0));
   }
 }
