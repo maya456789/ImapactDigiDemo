@@ -29,6 +29,13 @@
   background-size: cover;
 }
 
+.card-border{
+  border: none;
+}
+.img-radius{
+ border-radius: 25px;
+}
+
 @media (min-width:992px){
   .footer-img{
     width:100%;
@@ -179,4 +186,11 @@ p{
   .bg-image{
     height: 200px;
   }
+}
+
+@media (min-width:576px) and (max-width:992px){
+  p{
+    font-size: 18px;
+  }
+
 }
