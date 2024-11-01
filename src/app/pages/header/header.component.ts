@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { CartService } from '../../services/cart.service';
 
 @Component({
@@ -8,5 +9,10 @@ import { CartService } from '../../services/cart.service';
 })
 export class HeaderComponent {
 
-  constructor(public cartService: CartService){}
+  constructor(public cartService: CartService,private rout:Router){}
+
+
+  cartComponent(){
+    this.rout.navigate(['/cart']);
+  }
 }

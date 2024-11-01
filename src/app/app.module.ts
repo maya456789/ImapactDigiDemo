@@ -8,7 +8,8 @@ import { FooterComponent } from './pages/footer/footer.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { CartComponent } from './pages/cart/cart.component';
-
+import { RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,11 @@ import { CartComponent } from './pages/cart/cart.component';
     
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
-    
+    RouterOutlet, RouterModule,
+    RouterLinkActive
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]

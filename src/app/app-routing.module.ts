@@ -7,7 +7,9 @@ const routes: Routes = [
   {
     path:'',component:HomepageComponent
   },
-  {path:'cart',component:CartComponent}
+  {
+    path:'cart',component:CartComponent
+  }
 
 ];
 
